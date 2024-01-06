@@ -1,0 +1,14 @@
+# Define variables and get user input
+length = 5
+width = input("Enter the width of the rectangle: ")
+
+# Handle user input and calculate area
+try:
+    width = float(width)
+    area = length * width
+except ValueError:
+    print("Error: Invalid input. Width must be a number.")
+    area = 0
+
+# Output result
+print(f"The area of the rectangle is {area:.2f}")
