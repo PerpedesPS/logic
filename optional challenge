@@ -1,0 +1,17 @@
+# This program calculates the cost of coffee orders
+
+number_of_orders = 4
+cost_per_order = 3.5
+total_tax_percentage = 7.5
+
+total_cost_before_tax = number_of_orders * cost_per_order
+tax = total_cost_before_tax * total_tax_percentage / 100  
+
+discount_percentage = 10
+total_cost_after_tax = total_cost_before_tax + tax   # apply tax first
+discount = discount_percentage / 100 * total_cost_after_tax
+total_cost = total_cost_after_tax - discount   # subtract discount after tax
+
+total = total_cost + tax 
+
+print("The cost of your coffee orders is $" + str(total))  # cost variable is concatenated to the string
