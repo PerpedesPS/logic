@@ -1,0 +1,19 @@
+#fixed error by placing string within parentheses for print syntax
+print("Welcome to the error program")    
+
+
+# Variables declaring the user's age, casting the str to an int, and printing the result
+age_Str = "24 years old"
+age = int(age_Str[:-10])
+print("I'm " + str(age) + " years old.")
+
+# Variables declaring additional years and printing the total years of age
+years_from_now = 3
+total_years = age + int(years_from_now)
+answer_years = str(total_years)
+print("The total number of years:" + answer_years)
+
+# Variable to calculate the total amount of months from the total amount of years and printing the result
+total_months = total_years * 12      #fixed error by referencing the variable total_years instead of total
+print("In 3 years and 6 months, I'll be " + str(total_months + 6) + " months old")
+#fixed error by calculating total months, added 6 months from now to match the hint result of 330 months
